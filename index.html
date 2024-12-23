@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X0 O'yini</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .cell {
+            aspect-ratio: 1 / 1;
+        }
+        #box{
+            box-shadow: 25px 25px 25px 25px black;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen bg-blue-500">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-xs md:max-w-sm lg:max-w-md" id="box">
+        <h1 class="text-2xl font-bold mb-4 text-center font-serif">X O <span class="text-red-900">O'yini</span></h1>
+        <div class="grid grid-cols-3 gap-2 mb-4">
+            <div class="cell bg-gray-200 rounded-md flex items-center justify-center text-3xl cursor-pointer" id="cell-0" onclick="makeMove(0)"></div>
+            <div class="cell bg-gray-200 rounded-md flex items-center justify-center text-3xl cursor-pointer" id="cell-1" onclick="makeMove(1)"></div>
+            <div class="cell bg-gray-200 rounded-md flex items-center justify-center text-3xl cursor-pointer" id="cell-2" onclick="makeMove(2)"></div>
+            <div class="cell bg-gray-200 rounded-md flex items-center justify-center text-3xl cursor-pointer" id="cell-3" onclick="makeMove(3)"></div>
+            <div class="cell bg-gray-200 rounded-md flex items-center justify-center text-3xl cursor-pointer" id="cell-4" onclick="makeMove(4)"></div>
+            <div class="cell bg-gray-200 rounded-md flex items-center justify-center text-3xl cursor-pointer" id="cell-5" onclick="makeMove(5)"></div>
+            <div class="cell bg-gray-200 rounded-md flex items-center justify-center text-3xl cursor-pointer" id="cell-6" onclick="makeMove(6)"></div>
+            <div class="cell bg-gray-200 rounded-md flex items-center justify-center text-3xl cursor-pointer" id="cell-7" onclick="makeMove(7)"></div>
+            <div class="cell bg-gray-200 rounded-md flex items-center justify-center text-3xl cursor-pointer" id="cell-8" onclick="makeMove(8)"></div>
+        </div>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded w-full hover:bg-blue-700" onclick="resetGame()">Yangi o'yin</button>
+        <p id="message" class="mt-4 text-center text-xl"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
